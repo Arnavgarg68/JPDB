@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student enrollment form</title>
+
+    <!-- external links -->
+
+    <script src="./javascripts/script.js"></script>
+    <link rel="stylesheet" href="/styling/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Matemasie&family=Playwrite+SK:wght@100..400&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+</head>
+<!-- I understand could have used BOOTSTRAP but didn't as my own styling provides me more options and maintainance -->
+
+<body>
+    <div class="main-body">
+        <div class="heading">
+            <h1 style="text-align: center;">Student Enrollment form</h1>
+        </div>
+        <div class="inner-body">
+            <!-- fields -> Roll-No, Full-Name, Class, Birth-Date, Address, Enrollment-Date -->
+            <form action="" id="student-form">
+                <div class="field-container">
+                    <label for="roll-number" class="field-label">Roll number:</label>
+                    <input type="text" id="roll-number" class="field-input" placeholder="roll-number"
+                        onchange="getByRollno()">
+                </div>
+                <div class="field-container">
+                    <label for="full-name" class="field-label">Full Name:</label>
+                    <input type="text" id="full-name" class="field-input" placeholder="full-name">
+                </div>
+                <div class="field-container">
+                    <label for="class" class="field-label">Class:</label>
+                    <input type="text" id="class" class="field-input" placeholder="class">
+                </div>
+                <div class="field-container">
+                    <label for="DOB" class="field-label">Date of Birth:</label>
+                    <input type="date" id="DOB" class="field-input" placeholder="DOB">
+                </div>
+                <div class="field-container">
+                    <label for="address" class="field-label">Address:</label>
+                    <input type="text" id="address" class="field-input" placeholder="address">
+                </div>
+                <div class="field-container">
+                    <label for="enrollment-date" class="field-label">Enrollment date:</label>
+                    <input type="date" id="enrollment-date" class="field-input" placeholder="enrollment-date">
+                </div>
+                <div class="buttons-container">
+                    <button disabled id="save-btn" onclick="sendnewreq()">Save</button>
+                    <button disabled id="change-btn" onclick="sendupdatereq()">Change</button>
+                    <button disabled id="reset-btn" onclick="resetForm()">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.getElementById('save-btn').addEventListener('click', function (event) {
+            event.preventDefault();
+        });
+        document.getElementById('change-btn').addEventListener('click', function (event) {
+            event.preventDefault();
+        });
+        document.getElementById('reset-btn').addEventListener('click', function (event) {
+            event.preventDefault();
+        });
+    </script>
+</body>
+
+</html>
