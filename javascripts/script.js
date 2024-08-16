@@ -67,7 +67,7 @@ async function getByRollno() {
         })
         if (!response.ok) {
             alert("not ok probably cors error");
-            console.log(response);
+            return;
         }
         const data = await response.json();
 
@@ -134,6 +134,8 @@ async function sendnewreq() {
         resetForm();
     } catch (error) {
         alert("error in form submission Try after sometime");
+        console.log(error);
+
     }
 }
 // function for update
@@ -182,5 +184,7 @@ async function sendupdatereq() {
         resetForm();
     } catch (error) {
         alert("error in form submission Try after sometime");
+        console.log(error);
+
     }
 }

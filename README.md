@@ -1,7 +1,12 @@
 
+![Logo](https://login2explore.com/img/logo.png)
+
+
 # JPDB - Student form
 
 This basic student form shows the ease and technicality of using Json Power DB as database for json data.
+
+- Link -> https://jpdb-7vrz.onrender.com
 
 
 ## Features of JsonPowerDB
@@ -17,7 +22,7 @@ This basic student form shows the ease and technicality of using Json Power DB a
 
 ## Release History
 Versions:
-1.0.0.1(Beta) -> Improved  data fetch from JSONPOWERDB
+1.0.0.1 -> Improved  data fetch from JSONPOWERDB and all validations
 1.0.0.0 -> Base version for basic CRUD operation functionality
 ## Authors
 
