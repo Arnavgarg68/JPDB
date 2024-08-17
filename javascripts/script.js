@@ -86,7 +86,10 @@ async function getByRollno() {
         document.getElementById('enrollment-date').value = parsedData.record["enrollment-date"]
         document.getElementById('address').value = parsedData.record.address
     } catch (error) {
+        alert("Problem in server connection CORS ->"+error);
         console.log(error);
+        document.getElementById("save-btn").disabled = false;
+        document.getElementById("reset-btn").disabled = false;
     }
 }
 // new user request
